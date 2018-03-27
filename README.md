@@ -1,6 +1,6 @@
-#Time-Tagger firmware for the Atlas-SoC Kit
+# Time-Tagger firmware for the Atlas-SoC Kit
 
-##Materials :
+## Materials :
 * DE0-Nano-SoC (from Terasic) Cyclone V FPGA evaluation Board
 * SD card image: Altas-SoC (atlas_sdcard_v1.1.img)
   * Linux kernel 4.0
@@ -16,11 +16,11 @@ Mains source :
 https://rocketboards.org/foswiki/view/Documentation/AtlasSoCDevelopmentPlatform
 
 
-###Installing Atlas-SoC image on µSD card
+### Installing Atlas-SoC image on µSD card
 
 https://rocketboards.org/foswiki/Documentation/AtlasSoCSdCardImage
 
-###Connecting via USB-Serial
+### Connecting via USB-Serial
 
 Add user to `dialout` group for acces to port `ttyUSB0`
 
@@ -39,7 +39,7 @@ Under Serial Port Setup choose the following
 Select Save Setup as dfl to save the default setupSelect Exit.
 
 
-###Communicate to the SoC Kit by ssh
+### Communicate to the SoC Kit by ssh
 
 Define a static IP:
 https://rocketboards.org/foswiki/Documentation/SettingAStaticIPAddressInAngstrom
@@ -49,7 +49,7 @@ https://rocketboards.org/foswiki/Documentation/SettingAStaticIPAddressInAngstrom
 The it is possible to connect via `ssh` and send programming files by `scp`.
 
 
-####Automate ssh login using RSA key pair
+#### Automate ssh login using RSA key pair
 
 https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password
 
@@ -76,7 +76,7 @@ Then log in:
 
 
 
-###FPGA programming
+### FPGA programming
 
 During tests, the FPGA should be programmed using the dedicated miniUSB port with Quartus programmer. The program is lost at power down.
 
@@ -140,7 +140,7 @@ The "Network Time Protocol" is the best solution for automatic synchronisation a
 
 A less precise but simple alternative is shown below.
 
-###Set date/time (manually / by script)
+### Set date/time (manually / by script)
 
 First (once for all), define timezone
 
